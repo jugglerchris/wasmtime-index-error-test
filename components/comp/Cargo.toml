@@ -1,0 +1,17 @@
+[package]
+name = "comp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wit-bindgen = { version = "0.19.1", default-features = false, features = ["realloc", "macros"] }
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "component:test"
+
+[package.metadata.component.dependencies]

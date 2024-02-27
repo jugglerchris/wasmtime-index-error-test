@@ -1,0 +1,8 @@
+package comp:test;
+
+world w {
+    export foo: interface {
+        resource myres;
+        make: func() -> myres;
+    }
+}
